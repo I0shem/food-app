@@ -1,0 +1,129 @@
+.foodApp {
+  height: auto;
+  width: auto;
+  background: linear-gradient(#e9f3fd, #e5e5fe, #e9f3fd);
+  min-height: 100%;
+}
+.appBar {
+  z-index: 10;
+  position: fixed;
+  height: 75px;
+  width: 100vw;
+  background-color: #e9f3fd;
+}
+.appContent {
+  padding-top: 50px;
+}
+.appIcon {
+  position: fixed;
+  top: -15px;
+  padding-left: 20px;
+}
+.appIcon img {
+  width: auto;
+  height: 75px;
+}
+.appPages {
+  width: 100vw;
+  position: fixed;
+  top: -17px;
+}
+li {
+  list-style: none;
+}
+
+.appPages ul {
+  margin-left: 33%;
+  width: 100%;
+  height: 75px;
+  text-align: center;
+  display: flex;
+}
+.appPages li {
+  line-height: 75px;
+  height: 50px;
+  margin-left: 50px;
+  font-weight: 600;
+  color: black;
+}
+.appPages li:hover {
+  cursor: pointer;
+  color: red;
+}
+.footer {
+  bottom: 0;
+  width: 100%;
+  height: 300px;
+  margin-top: 150px;
+  z-index: 99;
+  display: flex;
+}
+.bottomAppIcon {
+  bottom: 250px;
+  padding-left: 80px;
+}
+.bottomMedia {
+  margin-left: 40px;
+  width: 260px;
+}
+.regularText {
+  font-size: 18px;
+  color: #00000085;
+}
+.bottomMedia ul {
+  margin-top: 30px;
+  margin-left: -45px;
+  display: flex;
+}
+.bottomMedia li {
+  margin-right: 60px;
+}
+.bottomTextListF ul {
+  margin-left: 150px;
+}
+.textHeader {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 50px;
+}
+.bottomTextListF,
+.bottomTextList ul {
+  display: block;
+  margin-left: 150px;
+}
+
+.bottomTextList li {
+  display: block;
+  margin-bottom: 20px;
+}
+.bottomTextListF li {
+  display: block;
+  margin-bottom: 20px;
+}
+.regularTextList {
+  font-size: 18px;
+  color: #00000085;
+}
+.bottomTextListF li:hover {
+  cursor: pointer;
+}
+.bottomTextList li:hover {
+  cursor: pointer;
+}
+.bottomInput {
+  width: 240px;
+  height: 50px;
+  border-radius: 30px;
+  font-size: 18px;
+  padding-left: 20px;
+}
+.bottomInput input[type="email"] {
+  padding-left: 20px;
+  margin: 15px;
+  box-sizing: border-box;
+}
+.sendEmailBtn {
+  position: absolute;
+  margin-left: -40px;
+  margin-top: 20px;
+}
