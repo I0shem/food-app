@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/food-app/static/css/main.538588e8.css",
-    "main.js": "/food-app/static/js/main.68c828ed.js",
+    "main.css": "/food-app/static/css/main.3b305e75.css",
+    "main.js": "/food-app/static/js/main.27451a8b.js",
     "static/media/kfcBurger.png": "/food-app/static/media/kfcBurger.ba9a9d11ba4049f4131d.png",
-    "static/media/kfc-logo.svg": "/food-app/static/media/kfc-logo.f0d16dcc28171f87d5d5233487629224.svg",
+    "static/media/kfc-logo.svg": "/food-app/static/media/kfc-logo.731175802ca33cd32909399d041e02d1.svg",
     "static/media/google-map.png": "/food-app/static/media/google-map.734aa803633c7d43e321.png",
-    "static/media/clip-order-completed.svg": "/food-app/static/media/clip-order-completed.574b7b8e615bafb586f22424af3769c3.svg",
-    "static/media/best-quality.svg": "/food-app/static/media/best-quality.9b19dccb684086cc5bc5d3e638172320.svg",
-    "static/media/fast-delivery.svg": "/food-app/static/media/fast-delivery.cb7ce2c92905ace2d58fcbd6be0d2e16.svg",
-    "static/media/user.svg": "/food-app/static/media/user.6a4fa84b4d07b23abfb2f5ebbb67b6b8.svg",
+    "static/media/clip-order-completed.svg": "/food-app/static/media/clip-order-completed.60d58d73b0f2156b068aa55dfb9bea78.svg",
+    "static/media/best-quality.svg": "/food-app/static/media/best-quality.8743ed4f5d5136c1a79f7cf839029929.svg",
+    "static/media/fast-delivery.svg": "/food-app/static/media/fast-delivery.f9bd0004b534a917915bd479cd24c636.svg",
+    "static/media/user.svg": "/food-app/static/media/user.c06d422b24d7c2f4525e1156e6dd25a1.svg",
     "index.html": "/food-app/index.html",
-    "static/media/search.svg": "/food-app/static/media/search.b52ab205b8ee364ec729f07f227b4591.svg",
-    "static/media/cart.svg": "/food-app/static/media/cart.9277f1b151fff5567c968f648c7969d7.svg",
-    "main.538588e8.css.map": "/food-app/static/css/main.538588e8.css.map",
-    "main.68c828ed.js.map": "/food-app/static/js/main.68c828ed.js.map"
+    "static/media/search.svg": "/food-app/static/media/search.fd88075c74317b6e550946cdfcb50c15.svg",
+    "static/media/cart.svg": "/food-app/static/media/cart.43d9fc4348b25aeb6d9281d858cae501.svg",
+    "main.3b305e75.css.map": "/food-app/static/css/main.3b305e75.css.map",
+    "main.27451a8b.js.map": "/food-app/static/js/main.27451a8b.js.map"
   },
   "entrypoints": [
-    "static/css/main.538588e8.css",
-    "static/js/main.68c828ed.js"
+    "static/css/main.3b305e75.css",
+    "static/js/main.27451a8b.js"
   ]
 }
