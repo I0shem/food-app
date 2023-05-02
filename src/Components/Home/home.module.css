@@ -1,7 +1,5 @@
 .homePage {
   width: auto;
-
-  height: auto;
 }
 .contentHome {
   width: 100%;
@@ -128,7 +126,7 @@
   margin-bottom: 50px;
   width: 400px;
   height: 500px;
-  border-radius: 24px;
+
   border: 2px solid white;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
@@ -185,4 +183,285 @@
 }
 .pageNum a {
   visibility: hidden;
+}
+@media only screen and (max-width: 768px) {
+  .topContent {
+    margin-top: -150px;
+    display: flex;
+  }
+  .inspirationalText {
+    width: 40%;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  .regularTextBox {
+    margin-top: -20px;
+    width: 90%;
+  }
+  .regularText {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  .getStartedBtn button {
+    width: 130px;
+    height: 35px;
+    background-color: #ec6083;
+    font-size: 14px;
+    margin-left: 20px;
+  }
+  .inspirationalImage {
+    padding-top: 150px;
+  }
+  .inspirationalImage img {
+    width: 300px;
+  }
+  .qualitiesContent {
+    margin-top: 50px;
+  }
+  .qualitiesContentText {
+    margin-left: 20%;
+    width: 60%;
+  }
+  .qualitiesContent h1 {
+    font-size: 24px;
+  }
+
+  .qCList svg {
+    height: 120px;
+    margin-right: 0;
+  }
+  .qCList li:nth-child(1) {
+    position: absolute;
+    display: inline-block;
+    left: 10px;
+    width: 120px;
+  }
+  .qCList li:nth-child(1) svg {
+    position: relative;
+
+    width: 120px;
+    margin-bottom: -20px;
+  }
+  .qCList li:nth-child(2) {
+    position: absolute;
+    left: 40%;
+    width: 120px;
+    margin-bottom: -20px;
+  }
+  .qCList li:nth-child(2) svg {
+    position: relative;
+    width: 120px;
+    margin-bottom: -20px;
+  }
+  .qCList li:nth-child(3) {
+    position: absolute;
+    right: 10px;
+    width: 120px;
+    margin-bottom: -20px;
+  }
+  .qCList li:nth-child(3) svg {
+    position: relative;
+    width: 120px;
+    margin-bottom: -20px;
+  }
+  .qCList h2 {
+    filter: none;
+    font-size: 15px;
+  }
+  .regularQCText {
+    font-size: 9px;
+    width: 100px;
+    color: #00000085;
+  }
+  .redQCText {
+    color: #ec6083;
+    font-size: 12px;
+  }
+  .ourMenu {
+    margin-top: 200px;
+  }
+  .topContentFlexOM {
+    margin-left: 10px;
+  }
+  .redMenuTitleText {
+    color: #ec6083;
+    font-size: 12px;
+  }
+  .ourMenu h2 {
+    font-size: 24px;
+    width: 50vw;
+  }
+  .foodData {
+    padding-left: 40px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .foodBox {
+    margin-right: 25px;
+    margin-bottom: 25px;
+    width: 200px;
+    height: 250px;
+  }
+  .foodImage {
+    border-radius: 40px;
+    width: 200px;
+  }
+  .foodName {
+    margin-top: 0;
+    font-size: 14px;
+  }
+  .foodDescription {
+    margin-top: -20px;
+    font-size: 9px;
+  }
+  .foodPrice {
+    position: absolute;
+    bottom: -14px;
+    left: -50px;
+  }
+  .addFoodBtn {
+    position: absolute;
+    bottom: -5px;
+    right: 40px;
+    width: 35px;
+  }
+  .PaginationBox {
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  .PaginationBox svg {
+    height: 40px;
+  }
+}
+
+@media only screen and (max-width: 497px) {
+  .topContent {
+    margin-top: -150px;
+  }
+  .inspirationalText {
+    width: 40%;
+    font-size: 16px;
+    margin-left: 5px;
+  }
+  .regularTextBox {
+    margin-top: -10px;
+    width: 90%;
+  }
+  .regularText {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  .getStartedBtn button {
+    width: 110px;
+  }
+  .inspirationalImage {
+    padding-top: 120px;
+  }
+  .inspirationalImage img {
+    width: 250px;
+  }
+  .qualitiesContent {
+    margin-top: 30px;
+  }
+
+  .qualitiesContent h1 {
+    font-size: 20px;
+  }
+
+  .qCList svg {
+    height: 110px;
+  }
+
+  .qC .qCList li:nth-child(1) {
+    position: absolute;
+    display: inline-block;
+    left: 5px;
+    width: 110px;
+  }
+  .qCList li:nth-child(1) svg {
+    width: 110px;
+    margin-bottom: -10px;
+  }
+  .qCList li:nth-child(2) {
+    position: absolute;
+    left: 37%;
+    width: 110px;
+    margin-bottom: -10px;
+  }
+  .qCList li:nth-child(2) svg {
+    position: relative;
+    width: 110px;
+    margin-bottom: -10px;
+  }
+  .qCList li:nth-child(3) {
+    position: absolute;
+    right: 5px;
+    width: 110px;
+    margin-bottom: -10px;
+  }
+  .qCList li:nth-child(3) svg {
+    position: relative;
+    width: 110px;
+    margin-bottom: -10px;
+  }
+  .qCList h2 {
+    filter: none;
+    font-size: 14px;
+    height: 25px;
+  }
+  .regularQCText {
+    font-size: 9px;
+    width: 100px;
+    color: #00000085;
+  }
+
+  .ourMenu {
+    margin-top: 190px;
+  }
+  .topContentFlexOM {
+    margin-left: 5px;
+  }
+
+  .ourMenu h2 {
+    font-size: 20px;
+    width: 50vw;
+  }
+  .foodData {
+    padding-left: 9px;
+    margin-bottom: 10px;
+  }
+  .foodBox {
+    margin-right: 15px;
+    margin-bottom: 15px;
+    width: 180px;
+    height: 240px;
+  }
+  .foodImage {
+    width: 180px;
+  }
+  .foodName {
+    font-size: 12px;
+  }
+  .foodDescription {
+    margin-top: -15px;
+    font-size: 10px;
+  }
+  .foodPrice {
+    position: absolute;
+    bottom: -8px;
+    left: -50px;
+  }
+  .addFoodBtn {
+    position: absolute;
+    bottom: -5px;
+    right: 50px;
+    width: 30px;
+  }
+  .PaginationBox {
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  .PaginationBox svg {
+    height: 40px;
+  }
 }

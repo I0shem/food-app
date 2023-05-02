@@ -23,7 +23,7 @@ const Home = () => {
   const handleChange = (page) => {
     setPage(page);
   };
-  console.log(currentFood);
+
   return (
     <div className={s.homePage}>
       <div className={s.contentHome}>

@@ -1,28 +1,26 @@
 .foodApp {
-  height: auto;
-  width: auto;
   background: linear-gradient(#e9f3fd, #e5e5fe, #e9f3fd);
-  min-height: 100%;
 }
 .appBar {
   z-index: 10;
-  position: fixed;
+  position: sticky;
+  top: 0;
   height: 75px;
-  width: 100vw;
-  background-color: #e9f3fd;
+  background-color: rgb(233, 243, 253);
 }
 .appContent {
   padding-top: 50px;
 }
 .appIcon {
   position: fixed;
-  top: -15px;
-  padding-left: 20px;
+  top: 0px;
+  left: -0px;
+  padding-left: 0px;
 }
-.appIcon img {
-  width: auto;
-  height: 75px;
+.appIcon svg {
+  height: 70px;
 }
+
 .appPages {
   width: 100vw;
   position: fixed;
@@ -31,7 +29,9 @@
 li {
   list-style: none;
 }
-
+.Link {
+  text-decoration: none;
+}
 .appPages ul {
   margin-left: 33%;
   width: 100%;
@@ -44,7 +44,6 @@ li {
   height: 50px;
   margin-left: 50px;
   font-weight: 600;
-  color: black;
 }
 .appPages li:hover {
   cursor: pointer;
@@ -52,7 +51,7 @@ li {
 }
 .footer {
   bottom: 0;
-  width: 100%;
+  width: 100vw;
   height: 300px;
   margin-top: 150px;
   z-index: 99;
@@ -126,4 +125,256 @@ li {
   position: absolute;
   margin-left: -40px;
   margin-top: 20px;
+}
+.appButtons {
+  position: fixed;
+  right: 20px;
+  top: -10px;
+}
+.appButtons ul {
+  display: flex;
+}
+.appButtons li {
+  margin-left: 20px;
+}
+.appButtons li:hover {
+  cursor: pointer;
+}
+.Auth {
+  z-index: 555;
+}
+
+@media only screen and (max-width: 768px) {
+  .foodApp {
+    width: 100vw;
+  }
+
+  .appBar {
+    width: 100vw;
+  }
+  .appIcon {
+    position: fixed;
+    top: 0px;
+    left: -60px;
+    padding-left: 0px;
+  }
+  .appIcon svg {
+    height: 65px;
+  }
+  .appPages {
+    width: 20vw;
+    left: 0px;
+  }
+  .appPages li {
+    font-size: 14px;
+    line-height: 75px;
+    height: 75px;
+    padding: 0px 5px;
+    margin-left: 0px;
+    font-weight: 600;
+  }
+  .appButtons {
+    right: 0;
+    top: 5px;
+  }
+  .appButtons svg {
+    height: 30px;
+  }
+  .appButtons li {
+    margin-left: -5px;
+  }
+  .footer {
+    height: 150px;
+    margin-top: 0px;
+    z-index: 99;
+    display: flex;
+    width: 100vw;
+  }
+
+  .bottomAppIcon {
+    padding-left: 20px;
+  }
+  .bottomAppIcon svg {
+    margin-left: 10px;
+    height: 50px;
+  }
+  .regularText {
+    font-size: 10px;
+    color: #00000085;
+  }
+  .bottomMedia {
+    margin-left: 10px;
+    width: 130px;
+  }
+  .bottomMedia li {
+    margin-right: 10px;
+  }
+  .bottomMedia li svg {
+    height: 20px;
+  }
+  .bottomMedia ul {
+    margin-top: 20px;
+    margin-left: -45px;
+    display: flex;
+  }
+
+  .bottomTextListF ul {
+    margin-left: 0px;
+  }
+  .textHeader {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: -10px;
+  }
+  .bottomTextListF,
+  .bottomTextList ul {
+    margin-left: 10px;
+  }
+
+  .bottomTextList li {
+    display: block;
+    margin-bottom: 12px;
+    margin-left: -30px;
+  }
+  .bottomTextListF li {
+    display: block;
+    margin-bottom: 12px;
+    margin-left: -10px;
+    width: 50px;
+  }
+  .regularTextList {
+    font-size: 10px;
+    color: #00000085;
+    max-width: 60px;
+  }
+  .getInTouch p {
+    display: none;
+  }
+
+  .bottomInput {
+    width: 85px;
+    height: 18px;
+    font-size: 10px;
+    padding-left: 5px;
+  }
+  .sendEmailBtn {
+    position: absolute;
+    margin-left: -18px;
+    margin-top: 2px;
+    width: 12px;
+  }
+}
+@media only screen and (max-width: 497px) {
+  .appBar {
+    height: 100px;
+  }
+  .appIcon {
+    top: 10px;
+    left: -60px;
+    padding-left: 0px;
+  }
+  .appIcon svg {
+    height: 70px;
+  }
+  .appPages {
+    top: 25px;
+    width: 30vw;
+  }
+
+  .appPages li {
+    margin-left: 5px;
+  }
+  .appButtons {
+    right: 10px;
+    top: 5px;
+  }
+  .appButtons svg {
+    height: 35px;
+  }
+
+  .footer {
+    height: 200px;
+  }
+
+  .bottomAppIcon {
+    padding-left: 0;
+  }
+  .bottomAppIcon svg {
+    position: relative;
+    top: 20px;
+    margin-left: 15px;
+    margin-right: 6px;
+    height: 55px;
+  }
+
+  .regularText {
+    margin-left: 20px;
+    margin-top: 35px;
+    width: 120px;
+    font-size: 8px;
+  }
+  .bottomMedia {
+    margin-top: 120px;
+    margin-left: -10px;
+    text-align: center;
+    display: flex;
+  }
+
+  .bottomMedia li svg {
+    position: relative;
+    margin-top: -20px;
+    margin-left: 0px;
+    height: 35px;
+  }
+  .bottomMedia ul {
+    margin-top: 55px;
+
+    margin-left: -5px;
+  }
+
+  .bottomTextListF ul {
+    margin-top: -5px;
+    margin-left: -155px;
+  }
+
+  .bottomMenu {
+    margin-top: -5px;
+    margin-left: -50px;
+    display: flex;
+  }
+
+  .bottomTextList li {
+    display: block;
+    margin-bottom: 10px;
+    margin-left: -20px;
+  }
+  .bottomTextListF li {
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    width: 50px;
+  }
+  .bottomTextList ul {
+    margin-left: 10px;
+  }
+  .regularTextList {
+    font-size: 10px;
+    color: #00000085;
+    max-width: 60px;
+  }
+  .textHeader {
+    margin-top: 15px;
+  }
+  .bottomInput {
+    width: 85px;
+    height: 18px;
+    font-size: 10px;
+    padding-left: 5px;
+  }
+  .sendEmailBtn {
+    position: absolute;
+    margin-left: -18px;
+    margin-top: 2px;
+    width: 12px;
+  }
 }

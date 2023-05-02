@@ -1,14 +1,17 @@
 import s from "./App.module.css";
-import { Routes, Route, BrowserRouter, Link } from "react-router-dom";
+import { Routes, Route, BrowserRouter, Link, NavLink } from "react-router-dom";
 import Home from "./Components/Home/home";
 import Menu from "./Components/Menu/menu";
 import Reservation from "./Components/Reservation/reservation";
 import About from "./Components/About/about";
 import Contact from "./Components/Contact/contact";
 import KFC_logo from "./Components/Images/kfc-logo.svg";
+import Search from "./Components/Images/search.svg";
+import Cart from "./Components/Images/cart.svg";
 import { ReactSVG } from "react-svg";
 import { IconContext } from "react-icons";
 import { BsFacebook, BsTwitter, BsInstagram, BsSendFill } from "react-icons/bs";
+import Authentication from "./Components/Firebase/auth";
 
 function App() {
   return (
@@ -18,60 +21,107 @@ function App() {
           <div className={s.appIcon}>
             <ReactSVG
               src={KFC_logo}
+              className={s.svg}
               beforeInjection={(svg) => {
-                svg.classList.add("svg-class-name");
-                svg.setAttribute("style", "width: 50px", "height: 50px");
+                svg.classList.add("svg");
+                svg.setAttribute("style", "width: 200px");
               }}
             />
           </div>
           <div className={s.appPages}>
             <ul>
-              <Link
+              <NavLink
                 className={s.Link}
-                to="/"
-                style={{ textDecoration: "none" }}
+                to="/food-app"
+                style={({ isActive }) => {
+                  return {
+                    color: isActive ? "red" : "black",
+                  };
+                }}
+                end
               >
-                <li>Home</li>
-              </Link>
+                <li id="home">Home</li>
+              </NavLink>
 
-              <Link
+              <NavLink
                 className={s.Link}
-                to="/Menu"
-                style={{ textDecoration: "none" }}
+                to="/food-app/Menu"
+                style={({ isActive }) => {
+                  return {
+                    color: isActive ? "red" : "black",
+                  };
+                }}
               >
-                <li>Menu</li>
-              </Link>
-              <Link
+                <li id="menu">Menu</li>
+              </NavLink>
+              <NavLink
                 className={s.Link}
-                to="/Reservation"
-                style={{ textDecoration: "none" }}
+                to="/food-app/Reservation"
+                style={({ isActive }) => {
+                  return {
+                    color: isActive ? "red" : "black",
+                  };
+                }}
               >
-                <li>Reservation</li>
-              </Link>
-              <Link
+                <li id="reservation">Reservation</li>
+              </NavLink>
+              <NavLink
                 className={s.Link}
-                to="/About"
-                style={{ textDecoration: "none" }}
+                to="/food-app/About"
+                style={({ isActive }) => {
+                  return {
+                    color: isActive ? "red" : "black",
+                  };
+                }}
               >
-                <li>About</li>
-              </Link>
-              <Link
+                <li id="about">About</li>
+              </NavLink>
+              <NavLink
                 className={s.Link}
-                to="/Contact"
-                style={{ textDecoration: "none" }}
+                to="/food-app/Contact"
+                style={({ isActive }) => {
+                  return {
+                    color: isActive ? "red" : "black",
+                  };
+                }}
               >
-                <li>Contact</li>
-              </Link>
+                <li id="contact">Contact</li>
+              </NavLink>
+            </ul>
+          </div>
+          <div className={s.appButtons}>
+            <ul>
+              <li>
+                <ReactSVG
+                  src={Search}
+                  beforeInjection={(svg) => {
+                    svg.classList.add("svg-class-name");
+                    svg.setAttribute("style", "width: 50px", "height: 50px");
+                  }}
+                />
+              </li>
+              <li>
+                <ReactSVG
+                  src={Cart}
+                  beforeInjection={(svg) => {
+                    svg.classList.add("svg-class-name");
+                    svg.setAttribute("style", "width: 50px", "height: 50px");
+                  }}
+                />
+              </li>
+              <li className={s.Auth}>
+                <Authentication />
+              </li>
             </ul>
           </div>
         </div>
         <div className={s.appContent}> </div>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Menu" element={<Menu />} />
-          <Route path="/Reservation" element={<Reservation />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Contact" element={<Contact />} />
+          <Route path="/food-app" element={<Home />} />
+          <Route path="/food-app/Menu" element={<Menu />} />
+          <Route path="/food-app/Reservation" element={<Reservation />} />
+          <Route path="/food-app/About" element={<About />} />
+          <Route path="/food-app/Contact" element={<Contact />} />
         </Routes>
         <div className={s.footer}>
           <div className={s.bottomMedia}>
@@ -84,10 +134,13 @@ function App() {
                 }}
               />
             </div>
-            <p className={s.regularText}>
-              We cook and deliver the tastiest food right away to your
-              designated location
-            </p>
+            <div>
+              <p className={s.regularText}>
+                We cook and deliver the tastiest food right away to your
+                designated location
+              </p>
+            </div>
+
             <ul>
               <Link to="https://www.instagram.com/" target="_blank">
                 <li>
@@ -139,51 +192,56 @@ function App() {
               <li className={s.regularTextList}>Menu</li>
             </ul>
           </div>
-          <div className={s.bottomTextList}>
-            <ul>
-              <li className={s.textHeader}>Company</li>
-              <li className={s.regularTextList}>Why KFC?</li>
-              <li className={s.regularTextList}>Partner With Us</li>
-              <li className={s.regularTextList}>FAQ</li>
-              <li className={s.regularTextList}>Blog</li>
-            </ul>
-          </div>
-          <div className={s.bottomTextList}>
-            <ul>
-              <li className={s.textHeader}>Support</li>
-              <li className={s.regularTextList}>Account</li>
-              <li className={s.regularTextList}>Support Center</li>
-              <li className={s.regularTextList}>Feedback</li>
-              <li className={s.regularTextList}>Contact Us</li>
-            </ul>
-          </div>
-          <div className={s.bottomTextList}>
-            <ul>
-              <li className={s.textHeader}>Get In Touch</li>
-              <li className={s.regularTextList}>
-                Questions Or Feedback <p>We'd Love To Hear From You</p>
-              </li>
-              <li>
-                <input
-                  type="email"
-                  className={s.bottomInput}
-                  placeholder="E-mail Address"
-                  pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
-                  required
-                ></input>
-                <Link>
-                  <IconContext.Provider
-                    value={{
-                      size: 20,
-                      className: s.sendEmailBtn,
-                      color: "black",
-                    }}
-                  >
-                    <BsSendFill />
-                  </IconContext.Provider>
-                </Link>
-              </li>
-            </ul>
+          <div className={s.bottomMenu}>
+            <div className={s.bottomTextList}>
+              <ul>
+                <li className={s.textHeader}>Company</li>
+                <li className={s.regularTextList}>Why KFC?</li>
+                <li className={s.regularTextList}>Partner With Us</li>
+                <li className={s.regularTextList}>FAQ</li>
+                <li className={s.regularTextList}>Blog</li>
+              </ul>
+            </div>
+            <div className={s.bottomTextList}>
+              <ul>
+                <li className={s.textHeader}>Support</li>
+                <li className={s.regularTextList}>Account</li>
+                <li className={s.regularTextList}>Support Center</li>
+                <li className={s.regularTextList}>Feedback</li>
+                <li className={s.regularTextList}>Contact Us</li>
+              </ul>
+            </div>
+
+            <div className={s.bottomTextList}>
+              <div className={s.getInTouch}>
+                <ul>
+                  <li className={s.textHeader}>Get In Touch</li>
+                  <li className={s.regularTextList}>
+                    Questions Or Feedback <p>We'd Love To Hear From You</p>
+                  </li>
+                  <li>
+                    <input
+                      type="email"
+                      className={s.bottomInput}
+                      placeholder="E-mail Address"
+                      pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
+                      required
+                    ></input>
+                    <Link>
+                      <IconContext.Provider
+                        value={{
+                          size: 20,
+                          className: s.sendEmailBtn,
+                          color: "black",
+                        }}
+                      >
+                        <BsSendFill />
+                      </IconContext.Provider>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>

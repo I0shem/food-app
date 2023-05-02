@@ -1,0 +1,9 @@
+.Authentication {
+  position: fixed;
+  top: 11px;
+}
+.Authentication img {
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+}

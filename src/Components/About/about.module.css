@@ -17,3 +17,19 @@
   border: 1px solid transparent;
   border-radius: 30px;
 }
+@media only screen and (max-width: 497px) {
+  .AboutContent {
+    min-height: 54vh;
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: 0;
+  }
+  .regularText {
+    font-size: 14px;
+    text-align: justify;
+  }
+  .KFCStoreImg {
+    height: 200px;
+    object-position: 60% 10%;
+  }
+}
