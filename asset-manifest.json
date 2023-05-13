@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/food-app/static/css/main.b107bb23.css",
-    "main.js": "/food-app/static/js/main.24df813e.js",
+    "main.js": "/food-app/static/js/main.b3cd8dcc.js",
     "static/media/kfcBurger.png": "/food-app/static/media/kfcBurger.ba9a9d11ba4049f4131d.png",
     "static/media/kfc-logo.svg": "/food-app/static/media/kfc-logo.731175802ca33cd32909399d041e02d1.svg",
     "static/media/google-map.png": "/food-app/static/media/google-map.734aa803633c7d43e321.png",
@@ -13,10 +13,10 @@
     "static/media/search.svg": "/food-app/static/media/search.fd88075c74317b6e550946cdfcb50c15.svg",
     "static/media/cart.svg": "/food-app/static/media/cart.43d9fc4348b25aeb6d9281d858cae501.svg",
     "main.b107bb23.css.map": "/food-app/static/css/main.b107bb23.css.map",
-    "main.24df813e.js.map": "/food-app/static/js/main.24df813e.js.map"
+    "main.b3cd8dcc.js.map": "/food-app/static/js/main.b3cd8dcc.js.map"
   },
   "entrypoints": [
     "static/css/main.b107bb23.css",
-    "static/js/main.24df813e.js"
+    "static/js/main.b3cd8dcc.js"
   ]
 }
