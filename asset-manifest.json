@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/food-app/static/css/main.63244191.css",
-    "main.js": "/food-app/static/js/main.a365840f.js",
+    "main.css": "/food-app/static/css/main.b0cc921a.css",
+    "main.js": "/food-app/static/js/main.75ca4c3b.js",
     "static/media/kfcBurger.png": "/food-app/static/media/kfcBurger.ba9a9d11ba4049f4131d.png",
     "static/media/kfc-logo.svg": "/food-app/static/media/kfc-logo.731175802ca33cd32909399d041e02d1.svg",
     "static/media/clip-order-completed.svg": "/food-app/static/media/clip-order-completed.60d58d73b0f2156b068aa55dfb9bea78.svg",
@@ -10,11 +10,11 @@
     "static/media/user.svg": "/food-app/static/media/user.c06d422b24d7c2f4525e1156e6dd25a1.svg",
     "index.html": "/food-app/index.html",
     "static/media/cart.svg": "/food-app/static/media/cart.43d9fc4348b25aeb6d9281d858cae501.svg",
-    "main.63244191.css.map": "/food-app/static/css/main.63244191.css.map",
-    "main.a365840f.js.map": "/food-app/static/js/main.a365840f.js.map"
+    "main.b0cc921a.css.map": "/food-app/static/css/main.b0cc921a.css.map",
+    "main.75ca4c3b.js.map": "/food-app/static/js/main.75ca4c3b.js.map"
   },
   "entrypoints": [
-    "static/css/main.63244191.css",
-    "static/js/main.a365840f.js"
+    "static/css/main.b0cc921a.css",
+    "static/js/main.75ca4c3b.js"
   ]
 }
