@@ -5,7 +5,7 @@ const AUTH_DOMAIN = "food-app-3ac38.firebaseapp.com";
 const PROJECT_ID = "food-app-3ac38";
 const STORAGE_BUCKET = "food-app-3ac38.appspot.com";
 const MESSAGING_SENDER_ID = "348137389324";
-const APP_ID = "348137389324";
+const APP_ID = "1:348137389324:web:3706c0aa3d5a7560dedd29";
 
 const firebaseConfig = {
   apiKey: API_KEY,

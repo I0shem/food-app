@@ -1,4 +1,126 @@
 .menuContent {
-  min-height: 100vh;
   text-align: center;
+}
+
+.foodData {
+  padding-left: 14%;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  margin-bottom: -100px;
+}
+.foodBox {
+  margin-right: 50px;
+  margin-bottom: 50px;
+  width: 300px;
+  height: 400px;
+  border: 2px solid white;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 60px;
+  text-align: center;
+}
+
+.foodImage {
+  border-radius: 60px;
+  width: 300px;
+}
+
+.foodName {
+  margin-top: 10px;
+  font-size: 20px;
+  color: black;
+  max-height: 25px;
+  filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.25));
+}
+.foodDescription {
+  margin-top: -10px;
+  font-size: 15px;
+  color: #00000085;
+  filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.25));
+}
+.foodPrice {
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+}
+.addFoodBtn {
+  position: absolute;
+  bottom: 10px;
+  right: 50px;
+}
+.addFoodBtn:hover {
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 768px) {
+  .foodData {
+    padding-left: 40px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .foodBox {
+    margin-right: 25px;
+    margin-bottom: 25px;
+    width: 200px;
+    height: 250px;
+  }
+  .foodImage {
+    border-radius: 40px;
+    width: 200px;
+  }
+  .foodName {
+    margin-top: 0;
+    font-size: 14px;
+  }
+  .foodDescription {
+    margin-top: -20px;
+    font-size: 9px;
+  }
+  .foodPrice {
+    position: absolute;
+    bottom: -14px;
+    left: 50px;
+  }
+  .addFoodBtn {
+    position: absolute;
+    bottom: -5px;
+    right: 40px;
+    width: 35px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .foodData {
+    padding-left: 9px;
+    margin-bottom: 10px;
+  }
+  .foodBox {
+    margin-right: 15px;
+    margin-bottom: 15px;
+    width: 180px;
+    height: 240px;
+  }
+  .foodImage {
+    width: 180px;
+  }
+  .foodName {
+    font-size: 12px;
+  }
+  .foodDescription {
+    margin-top: -15px;
+    font-size: 10px;
+  }
+  .foodPrice {
+    position: absolute;
+    bottom: -8px;
+    left: 50px;
+  }
+  .addFoodBtn {
+    position: absolute;
+    bottom: 0px;
+    right: 50px;
+    width: 30px;
+  }
 }

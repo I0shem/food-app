@@ -10,8 +10,11 @@ import ResponsivePagination from "react-responsive-pagination";
 import { TfiArrowCircleRight, TfiArrowCircleLeft } from "react-icons/tfi";
 import { IconContext } from "react-icons";
 import { IoIosAddCircle } from "react-icons/io";
+import Tilt from "react-parallax-tilt";
+import Vector from "../Images/Vector.svg";
+import chicken from "../Images/chicken.jpeg";
 
-const Home = () => {
+const Home = ({ cartList, setCartList }) => {
   const foodDB = foodData;
 
   const [page, setPage] = useState(1);
@@ -22,6 +25,16 @@ const Home = () => {
   const pagesCount = Math.ceil(foodDB.length / countElement);
   const handleChange = (page) => {
     setPage(page);
+  };
+  const handleClick = (f) => {
+    if (cartList.includes(f) === true) {
+      let index = cartList.indexOf(f);
+      let newArr = [...cartList];
+      newArr[index].quantity += 1;
+      setCartList(newArr);
+    } else {
+      setCartList((cartList) => [...cartList, f]);
+    }
   };
 
   return (
@@ -44,7 +57,17 @@ const Home = () => {
             </div>
           </div>
           <div className={s.inspirationalImage}>
-            <img src={kfcBurger} alt="" />
+            <img src={Vector} alt="" className={s.image2} />
+            <Tilt
+              className="tilt-img"
+              tiltMaxAngleX={1}
+              tiltMaxAngleY={1}
+              perspective={200}
+              transitionSpeed={2000}
+              gyroscope={true}
+            >
+              <img src={kfcBurger} alt="" className={s.image1} />
+            </Tilt>
           </div>
         </div>
         <div className={s.qualitiesContent}>
@@ -122,7 +145,7 @@ const Home = () => {
             {currentFood.map((f) => {
               return (
                 <div key={f.id} className={s.foodBox}>
-                  <img className={s.foodImage} src={f.image} alt="" />
+                  <img className={s.foodImage} src={chicken} alt="" />
                   <h5 className={s.foodName}>{f.name}</h5>
                   <h4 className={s.foodDescription}>{f.description}</h4>
                   <h2 className={s.foodPrice}>{f.price} $</h2>
@@ -133,7 +156,7 @@ const Home = () => {
                       color: "black",
                     }}
                   >
-                    <IoIosAddCircle />
+                    <IoIosAddCircle onClick={() => handleClick(f)} />
                   </IconContext.Provider>
                 </div>
               );

@@ -2,18 +2,19 @@ import s from "./App.module.css";
 import { Routes, Route, BrowserRouter, Link, NavLink } from "react-router-dom";
 import Home from "./Components/Home/home";
 import Menu from "./Components/Menu/menu";
-import Reservation from "./Components/Reservation/reservation";
+import { useState } from "react";
 import About from "./Components/About/about";
 import Contact from "./Components/Contact/contact";
 import KFC_logo from "./Components/Images/kfc-logo.svg";
-import Search from "./Components/Images/search.svg";
-import Cart from "./Components/Images/cart.svg";
 import { ReactSVG } from "react-svg";
 import { IconContext } from "react-icons";
 import { BsFacebook, BsTwitter, BsInstagram, BsSendFill } from "react-icons/bs";
 import Authentication from "./Components/Firebase/auth";
+import Cart from "./Components/Cart/Cart";
 
 function App() {
+  const [cartList, setCartList] = useState([]);
+
   return (
     <BrowserRouter>
       <div className={s.foodApp}>
@@ -24,7 +25,7 @@ function App() {
               className={s.svg}
               beforeInjection={(svg) => {
                 svg.classList.add("svg");
-                svg.setAttribute("style", "width: 200px");
+                svg.setAttribute("style", "width: 100px");
               }}
             />
           </div>
@@ -54,17 +55,7 @@ function App() {
               >
                 <li id="menu">Menu</li>
               </NavLink>
-              <NavLink
-                className={s.Link}
-                to="/food-app/Reservation"
-                style={({ isActive }) => {
-                  return {
-                    color: isActive ? "red" : "black",
-                  };
-                }}
-              >
-                <li id="reservation">Reservation</li>
-              </NavLink>
+
               <NavLink
                 className={s.Link}
                 to="/food-app/About"
@@ -92,22 +83,7 @@ function App() {
           <div className={s.appButtons}>
             <ul>
               <li>
-                <ReactSVG
-                  src={Search}
-                  beforeInjection={(svg) => {
-                    svg.classList.add("svg-class-name");
-                    svg.setAttribute("style", "width: 50px", "height: 50px");
-                  }}
-                />
-              </li>
-              <li>
-                <ReactSVG
-                  src={Cart}
-                  beforeInjection={(svg) => {
-                    svg.classList.add("svg-class-name");
-                    svg.setAttribute("style", "width: 50px", "height: 50px");
-                  }}
-                />
+                <Cart cartList={cartList} setCartList={setCartList} />
               </li>
               <li className={s.Auth}>
                 <Authentication />
@@ -117,11 +93,22 @@ function App() {
         </div>
         <div className={s.appContent}> </div>
         <Routes>
-          <Route path="/food-app" element={<Home />} />
-          <Route path="/food-app/Menu" element={<Menu />} />
-          <Route path="/food-app/Reservation" element={<Reservation />} />
-          <Route path="/food-app/About" element={<About />} />
-          <Route path="/food-app/Contact" element={<Contact />} />
+          <Route
+            path="/food-app"
+            element={<Home cartList={cartList} setCartList={setCartList} />}
+          />
+          <Route
+            path="/food-app/Menu"
+            element={<Menu cartList={cartList} setCartList={setCartList} />}
+          />
+          <Route
+            path="/food-app/About"
+            element={<About cartList={cartList} setCartList={setCartList} />}
+          />
+          <Route
+            path="/food-app/Contact"
+            element={<Contact cartList={cartList} setCartList={setCartList} />}
+          />
         </Routes>
         <div className={s.footer}>
           <div className={s.bottomMedia}>
@@ -129,7 +116,7 @@ function App() {
               <ReactSVG
                 src={KFC_logo}
                 beforeInjection={(svg) => {
-                  svg.classList.add("svg-class-name");
+                  svg.classList.add("svg");
                   svg.setAttribute("style", "width: 70px", "height: 70px");
                 }}
               />

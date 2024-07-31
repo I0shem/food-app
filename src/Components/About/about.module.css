@@ -1,7 +1,7 @@
 .AboutContent {
   text-align: center;
   margin-top: 50px;
-  margin-bottom: -137px;
+  min-height: 20vh;
 }
 .regularText {
   font-size: 18px;
@@ -31,5 +31,23 @@
   .KFCStoreImg {
     height: 200px;
     object-position: 60% 10%;
+    border-radius: 30px;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .AboutContent {
+    min-height: 70vh;
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: 0;
+  }
+  .regularText {
+    font-size: 14px;
+    text-align: justify;
+  }
+  .KFCStoreImg {
+    height: 200px;
+    object-position: 60% 10%;
+    border-radius: 30px;
   }
 }

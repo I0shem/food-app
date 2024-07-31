@@ -2,7 +2,8 @@ import React from "react";
 import s from "./contact.module.css";
 import { BsFillTelephoneFill, BsClock } from "react-icons/bs";
 import { IconContext } from "react-icons";
-import MapImg from "../Images/google-map.png";
+import MyGoogleMap from "../GoogleMap/googleMap";
+
 const Contact = () => {
   return (
     <div className={s.ContactBox}>
@@ -23,14 +24,16 @@ const Contact = () => {
                   color: "ec6083",
                 }}
               >
-                <BsFillTelephoneFill />
+                <a href="tel:66666666666">
+                  <BsFillTelephoneFill />
+                </a>
               </IconContext.Provider>
             </li>
           </ul>
         </span>
         <div className={s.workSchedule}>
           <h2 className={s.mainText}>Work Schedule</h2>
-          <p className={s.regularText}>from 10-00 to 22-00</p>
+          <p className={s.regularText}>from 10:00 to 22:00</p>
           <IconContext.Provider
             value={{
               size: 30,
@@ -41,7 +44,9 @@ const Contact = () => {
             <BsClock />
           </IconContext.Provider>
         </div>
-        <img src={MapImg} alt="" className={s.mapImg} />
+        <div className={s.myMap}>
+          <MyGoogleMap />
+        </div>
       </div>
     </div>
   );

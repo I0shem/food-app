@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Food App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
 
-## Available Scripts
+The "Food App" web application consists of three main pages: "Home", "Menu", and "Contact". Each of these pages has unique functionalities that allow users to easily order food. The app menu with a cart and login button is always accessible at the top.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+### Home Page
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Company Slogan**: Users can see the company's motto.
+- **Main Ideas**: Key ideas of the company are displayed as the user scrolls down.
+- **Menu Preview**: A brief representation of the menu with photos of dishes, their names, and short descriptions. This allows users to quickly get an overview and immediately add dishes to the cart.
+- **Cart**: Stores all added dishes and shows their total cost.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Menu Page
 
-### `npm test`
+- **Full Menu**: Displays the complete menu of dishes where users can view photos, names, descriptions, prices, and add them to the cart.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Screenshots
 
-### `npm run build`
+![Screenshot 1](./src/Components/Images/1.png)
+![Screenshot 2](./src/Components/Images/2.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Contact Page
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Contact Information**: Provides users with contact details, operating hours, and restaurant location on Google Maps for any questions or assistance.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Contributing
 
-### `npm run eject`
+Contributions are welcome! If you'd like to improve the app or fix any issues, feel free to submit a pull request.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Contact
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For any questions or feedback, reach out to me via email: i.i.shemeta@gmail.com.

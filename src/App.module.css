@@ -16,9 +16,13 @@
   top: 0px;
   left: -0px;
   padding-left: 0px;
+  width: 100px;
 }
 .appIcon svg {
   height: 70px;
+}
+.appIcon:hover {
+  cursor: pointer;
 }
 
 .appPages {
@@ -32,10 +36,11 @@ li {
 .Link {
   text-decoration: none;
 }
+
 .appPages ul {
-  margin-left: 33%;
-  width: 100%;
-  height: 75px;
+  position: relative;
+  left: 36.5%;
+  width: 25%;
   text-align: center;
   display: flex;
 }
@@ -51,7 +56,7 @@ li {
 }
 .footer {
   bottom: 0;
-  width: 100vw;
+  width: auto;
   height: 300px;
   margin-top: 150px;
   z-index: 99;
@@ -143,6 +148,9 @@ li {
 .Auth {
   z-index: 555;
 }
+.bottomMenu {
+  display: flex;
+}
 
 @media only screen and (max-width: 768px) {
   .foodApp {
@@ -155,15 +163,14 @@ li {
   .appIcon {
     position: fixed;
     top: 0px;
-    left: -60px;
+    left: 0px;
     padding-left: 0px;
   }
   .appIcon svg {
     height: 65px;
   }
-  .appPages {
-    width: 20vw;
-    left: 0px;
+  .appPages ul {
+    left: 25%;
   }
   .appPages li {
     font-size: 14px;
@@ -270,7 +277,7 @@ li {
   }
   .appIcon {
     top: 10px;
-    left: -60px;
+    left: 0px;
     padding-left: 0px;
   }
   .appIcon svg {

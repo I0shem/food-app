@@ -41,9 +41,10 @@
   top: 90px;
   left: 820px;
 }
-.mapImg {
-  margin-top: 50px;
-  width: 100%;
+.myMap {
+  position: relative;
+  top: 30px;
+  margin-left: 15%;
 }
 @media only screen and (max-width: 497px) {
   .mainText {
@@ -82,11 +83,55 @@
   .clockBtn {
     position: absolute;
     top: 85px;
-    left: 120px;
+    left: 100px;
     height: 20px;
   }
-  .mapImg {
-    margin-top: 10px;
-    width: 100%;
+  .myMap {
+    margin-bottom: 80px;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .mainText {
+    min-height: 17vw;
+    font-size: 24px;
+  }
+  .ContactBox li {
+    margin-right: 100px;
+  }
+  .ContactBox ul {
+    display: block;
+    position: relative;
+    margin-left: -200px;
+  }
+  .regularText {
+    font-size: 12px;
+    color: #00000085;
+  }
+  .phoneNumber {
+    position: absolute;
+    width: 200px;
+    margin-left: -30px;
+    top: 0;
+    font-size: 19px;
+    font-weight: bold;
+  }
+  .phoneBtn {
+    top: 20px;
+    left: -10px;
+    height: 20px;
+  }
+  .bigText {
+    font-size: 18px;
+  }
+
+  .clockBtn {
+    position: absolute;
+    top: 14vh;
+    left: 36vw;
+    height: 20px;
+  }
+  .myMap {
+    margin-bottom: 80px;
   }
 }
