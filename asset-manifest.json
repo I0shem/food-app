@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "/food-app/static/css/main.ce3ed67e.css",
-    "main.js": "/food-app/static/js/main.db8d2a5b.js",
+    "main.js": "/food-app/static/js/main.68dcf670.js",
+    "static/media/chicken.jpeg": "/food-app/static/media/chicken.1dfcbeab32c39792abd1.jpeg",
     "static/media/kfcBurger.png": "/food-app/static/media/kfcBurger.ba9a9d11ba4049f4131d.png",
     "static/media/kfc-logo.svg": "/food-app/static/media/kfc-logo.731175802ca33cd32909399d041e02d1.svg",
     "static/media/clip-order-completed.svg": "/food-app/static/media/clip-order-completed.60d58d73b0f2156b068aa55dfb9bea78.svg",
@@ -12,10 +13,10 @@
     "static/media/Vector.svg": "/food-app/static/media/Vector.f9f369c28768a0b3628ea3601a0ef1da.svg",
     "static/media/cart.svg": "/food-app/static/media/cart.43d9fc4348b25aeb6d9281d858cae501.svg",
     "main.ce3ed67e.css.map": "/food-app/static/css/main.ce3ed67e.css.map",
-    "main.db8d2a5b.js.map": "/food-app/static/js/main.db8d2a5b.js.map"
+    "main.68dcf670.js.map": "/food-app/static/js/main.68dcf670.js.map"
   },
   "entrypoints": [
     "static/css/main.ce3ed67e.css",
-    "static/js/main.db8d2a5b.js"
+    "static/js/main.68dcf670.js"
   ]
 }
